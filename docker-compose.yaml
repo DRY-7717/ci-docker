@@ -1,0 +1,10 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /var/www/html
+    ports:
+      - "8000:80"  # Adjust the ports as needed
+    volumes:
+      - .:/var/www/html
